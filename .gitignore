@@ -1,0 +1,9 @@
+# ignore all pdf outputs, regenerate them - only exception is the transition diagram
+*.pdf
+!transition_diagram_general.pdf
+# ignore raw data
+/data/raw/**/*.csv
+/data/raw/**/*.json
+
+# ignore jupyter notebook checkpoints
+.ipynb_checkpoints/*
