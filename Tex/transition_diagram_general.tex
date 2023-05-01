@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+
+\draw  (-1,5) ellipse (0.8 and 0.8) node (0.5) {$| \text{B} \rangle$};
+\draw  (-5,5) ellipse (0.8 and 0.8) node (0.5) {$| \text{D} \rangle$};
+
+
+\draw  [-latex'](-5,5.8) .. controls (-4,7) and (-2,7) .. (-1,5.8);
+\draw [-latex'] (-1,4.2) .. controls (-2,3) and (-4,3) .. (-5,4.2);
+\draw  [-latex'] (-5.8,5) .. controls (-7,4) and (-7,6) .. (-5.8,5);
+\draw  [-latex'](-0.2,5) .. controls (1,6) and (1,4) .. (-0.2,5);
+\node at (-3,7)[anchor=south] {\small $p\left( x_{i+1} = | \text{B} \rangle | x_{i} = | \text{D} \rangle  \right)$};
+\node at (-3,3)[anchor=north] {\small $p\left( x_{i+1} = | \text{D} \rangle | x_{i} = | \text{B} \rangle  \right)$};
+\node [anchor=west] at (1,5) {\small $p\left( x_{i+1} = | \text{B} \rangle | x_{i} = | \text{B} \rangle  \right)$};
+\node [anchor=east] at (-7,5) {\small $p\left( x_{i+1} = | \text{D} \rangle | x_{i} = | \text{D} \rangle  \right)$};
+\end{tikzpicture}

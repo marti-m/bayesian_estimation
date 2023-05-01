@@ -1,0 +1,39 @@
+\begin{tikzpicture}
+\draw  [dashed, color=red](-4.6,5.2) rectangle (-0.2,-1.4);
+\draw  [dashed, color=blue](-5,5.5) rectangle (2.2,-1.8);
+\draw  [dashed, color=red](-5.4,5.8) rectangle (4.6,-2.2);
+\draw  [dashed, color=blue](-5.8,6.2) rectangle (7,-2.6);
+\draw  [dashed, color=red](-6.2,6.6) rectangle (9.2,-3.4);
+\node [anchor=east] at (-0.6,-1) {box 1};
+\node [anchor=east] at (1.8,-1.4) {box 2};
+\node [anchor=east] at (4.2,-1.8) {box 3};
+\node [anchor=east] at (6.6,-2.2) {box \small $2m-2$};
+\node [anchor=east] at (8.8,-3) {box \small $2m-1$};
+\draw  (-4.2,4.2) rectangle (-3.4,3.4);\node at (-3.8,4.6) {$p(x_1)$};
+\draw (-3.4,3.8) -- (-1.8,3.8) node [midway, above, sloped]{$X_1$};
+\draw  (-1.8,4.2) rectangle (-1,3.4) node [pos=0.5]{=};
+\draw (-1.4,1.8) -- (-1.4,3.4) node [midway, right]{$X'_1$};
+\draw  (-1.8,1.8) rectangle (-1,1);\node at (-0.8,1.4) [fill=white, anchor=west]{$p(y_1 | x'_1)$};
+\draw (-1.4,0.2) -- (-1.4,1);
+\draw  [fill=black](-1.6,0.2) rectangle (-1.2,-0.2);\node at (-0.8,0) {$y_1$};
+\draw (-1,3.8) -- (0.6,3.8) node [midway, above, sloped, fill=white]{$X''_1$};
+\draw  (0.6,4.2) rectangle (1.4,3.4); \node at (1,4.6) {$p(x_2 | x''_1)$};
+\draw (1.4,3.8) -- (3,3.8) node [midway, above, sloped, fill=white]{$X_2$};
+\draw  (3,4.2) rectangle (3.8,3.4) node [pos=0.5]{=};
+\draw (3.4,1.8) -- (3.4,3.4) node [midway, right] {$X'_2$};
+\draw  (3,1.8) rectangle (3.8,1); \node at (4,1.4) [fill=white, anchor=west]{$p(y_2 | x'_2)$};
+\draw (3.4,0.2) -- (3.4,1);
+\draw  [fill=black](3.2,0.2) rectangle (3.6,-0.2); \node at (4,0) {$y_2$};
+\draw (3.8,3.8) -- (4.6,3.8) node [above, fill=white]{$X''_2$};
+
+\node at (5.8,3.8) {$\dots$};
+
+\draw (7,3.8) -- (7.8,3.8) node [pos=0, above, fill=white]{$X_m$};
+\draw  (7.8,4.2) rectangle (8.6,3.4) node [pos=0.5]{=};
+\draw (8.2,1.8) -- (8.2,3.4) node [midway, right]{$X'_m$};
+\draw  (7.8,1.8) rectangle (8.6,1);
+\draw (8.2,0.2) -- (8.2,1);
+\draw  [fill=black](8,0.2) rectangle (8.4,-0.2);\node at (8.8,0) [fill=white]{$y_m$};
+\draw (8.6,3.8) -- (9.4,3.8) node [above, fill=white]{$X''_m$};
+\node [anchor=west, fill=white] at (8.8,1.4) {$p(y_m | x'_m)$};
+\end{tikzpicture}
